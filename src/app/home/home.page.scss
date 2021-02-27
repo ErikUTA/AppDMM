@@ -25,3 +25,62 @@
 #container a {
   text-decoration: none;
 }
+
+.contenedor{
+  margin: 20px;
+  //background-image: url(../../assets/uta.jpg);
+  background-color: rgba(0, 0, 0, 0.877);
+  //background-size: cover;
+  //background-blend-mode: saturation;
+  border-radius: 15px;
+  //filter: opacity(0.8), sepia(0.8);  
+}
+
+.background{
+  --background: url(../../assets/paris.jpg) 0 0/100% 100% no-repeat;    
+}
+
+.as{
+  --background: none;  
+  color: white;
+}
+
+.toolbar{  
+  --ion-toolbar-background: black;    
+}
+
+.toolbar-title{
+  display: flex;
+}
+
+.title{
+  color: orange;
+  margin-top: 6px;
+  margin-left: 6px;  
+}
+
+.list{
+  --ion-item-background: transparent;
+  
+  color: white;
+}
+
+.text{
+  color: white;
+}
+
+.button{
+  margin: 15px;
+}
+
+.img{
+  clip-path: circle(47.5% at 50% 50%);
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  margin: 15px;
+}
+// .fondo{
+// background: #833ab4; /* fallback for old browsers */
+// background: -webkit-linear-gradient(to bottom, #fcb045, #fd1d1d, #833ab4); /* Chrome 10-25, Safari 5.1-6 */
+// background: linear-gradient(to bottom, #fcb045, #fd1d1d, #833ab4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+// }

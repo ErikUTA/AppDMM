@@ -1,20 +1,48 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
+
+  <ion-header [translucent]="true" class="toolbar">
     <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
+      <ion-title class="title">
+        <img src="../../assets/uta.jpg" width="35px" height="35px" style="margin: 0%;" class="img">
+        <strong style="bottom: 10px; left: 10px; position: relative;">
+          Log in
+        </strong> 
+      </ion-title>
     </ion-toolbar>
   </ion-header>
+  
+  <ion-content [fullscreen]="true" class="background">
+    
+    <ion-header collapse="condense">
+      
+    </ion-header>
+  
+    <div id="container" class="contenedor">
+      <ion-icon name="car-sport-outline" style="color: white; width: 50px; height: 50px;"></ion-icon>
+      <ion-item class="as">
+        <ion-label position="floating">Correo electrónico:</ion-label>
+        <ion-input [(ngModel)]="usuarios.email"></ion-input>
+      </ion-item>
+      <ion-item class="as">
+        <ion-label position="floating">Contraseña:</ion-label>
+        <ion-input type="password" [(ngModel)]="usuarios.password"></ion-input>
+      </ion-item>
+  
+      <ion-list class="list">
+      
+        <ion-item class="text">
+          <ion-label>Tipo de usuario</ion-label>
+          <ion-select [(ngModel)]="usuarios.typeUser" placeholder="Selecciona">
+            <ion-select-option value="admin">Administrador</ion-select-option>
+            <ion-select-option value="user">Usuario</ion-select-option>
+          </ion-select>
+        </ion-item>
+      
+      </ion-list>
+  
+      <ion-button expand="block" color="dark" (click)="logForm(usuarios)">Iniciar sesión</ion-button>
+  
+    </div>
+  
+  </ion-content>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
-</ion-content>
